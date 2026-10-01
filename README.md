@@ -1,18 +1,106 @@
-# Dashboard Interface
+# E-Commerce Sales Analytics Dashboard
 
-This project is a modern, responsive dashboard built with **React**, **Tailwind CSS**, **Chart.js** (via **react-chartjs-2**), and **Material-UI Icons**. It demonstrates a clean user interface that adapts to different screen sizes by displaying a Sidebar on desktop and a Header on mobile. The dashboard displays various charts (Line, Pie, and Bar) and cards with metrics, along with simulated real-time data updates.
+An interactive e-commerce sales analytics dashboard built with React and TypeScript. The dashboard provides a visual overview of revenue, orders, customers, sales categories, and performance insights.
 
 ## Features
 
-- **Responsive Layout:**  
-  - Sidebar for desktop view.
-  - Header for mobile view.
-- **Charts:**  
-  - Line Chart with smooth, curved lines comparing multiple sales metrics.
-  - Pie Chart with reduced size for sales distribution.
-  - Bar Charts (and a comparison component) with modern styling and reduced bar widths.
-- **Real-Time Data:**  
-  - Simulated live updates to showcase dynamic data.
-- **Modern UI:**  
-  - Clean, minimal design with Tailwind CSS.
-  - Material-UI Icons for intuitive visuals.
+- 📊 Interactive sales dashboard
+- 💰 Total revenue tracking
+- 🛒 Total orders tracking
+- 👥 Customer metrics
+- 💵 Average order value
+- 📈 Revenue trend visualization
+- 🥧 Sales by category visualization
+- 📅 Time-period filtering
+  - Last 7 Days
+  - Last 30 Days
+  - Last 90 Days
+  - Last 1 Year
+- 💡 Dynamic performance insights
+- 👤 Customer data table
+- 📄 Customer table pagination
+- 📱 Responsive dashboard layout
+- 🎨 Collapsible sidebar navigation
+
+## Tech Stack
+
+- React
+- TypeScript
+- Tailwind CSS
+- Material UI
+- Chart.js
+- React Chart.js 2
+- Vite
+- Git
+- GitHub
+
+## Dashboard Sections
+
+### KPI Cards
+
+The dashboard displays:
+
+- Total Revenue
+- Total Orders
+- Customers
+- Average Order Value
+
+The values change based on the selected time period.
+
+### Revenue Trend
+
+The revenue chart changes according to the selected period:
+
+| Period | Chart View |
+|---|---|
+| Last 7 Days | Daily revenue |
+| Last 30 Days | Weekly revenue |
+| Last 90 Days | Monthly revenue |
+| Last 1 Year | Monthly revenue |
+
+### Sales by Category
+
+A pie chart provides a visual breakdown of sales across different product categories.
+
+### Performance Insights
+
+The dashboard displays summarized insights for:
+
+- Revenue
+- Orders
+- Customers
+- Average order value
+- Category performance
+
+### Customer Data
+
+The customer table includes:
+
+- Customer ID
+- Name
+- Email
+- Number of orders
+- Account status
+- Actions
+
+Pagination is included for navigating customer records.
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Card.tsx
+│   ├── DashBoard.tsx
+│   ├── Header.tsx
+│   ├── Insights.tsx
+│   ├── LineChart.tsx
+│   ├── NavItem.tsx
+│   ├── PieChart.tsx
+│   ├── SectionHeader.tsx
+│   ├── SideBar.tsx
+│   └── Users.tsx
+│
+├── App.tsx
+├── index.css
+└── main.tsx
